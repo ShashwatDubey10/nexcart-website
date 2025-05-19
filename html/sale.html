@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale - NexCart</title>
+    <link rel="icon" type="image/png" href="../images/nexcartlogo.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img src="../images/nexcartlogo.png" alt="Logo" class="brand-logo" />
+        </a>
+        <div class="nav-items">
+          <div class="nav-links">
+            <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+            <a href="categories.html" class="nav-link">Categories</a>
+            <a href="sale.html" class="nav-link active">Sale</a>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search products..." />
+            <button class="search-btn"><img src="../images/search-icon.jpg" alt="Search" class="search-icon"></button>
+          </div>
+          <a href="../html/checkout.html" class="cart-icon"><img src="../images/shopping-cart.png" alt="Cart" class="cart-icon-img"><span class="cart-count">0</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sale Header -->
+    <section class="sale-header">
+      <h1>Special Offers</h1>
+      <p>Limited Time Deals</p>
+    </section>
+
+    <!-- Sale Products -->
+    <section class="products-grid">
+        <div class="product-card sale-item">
+            <div class="sale-tag">-30%</div>
+            <img src="../images/sale-product1.jpg" alt="Gaming Laptop Pro" class="product-image">
+            <div class="product-info">
+                <h3>Gaming Laptop Pro</h3>
+                <p class="original-price">$1499.99</p>
+                <p class="sale-price">$1049.99</p>
+                <form action="checkout.html" method="get">
+                    <input type="hidden" name="product_id" value="sale1">
+                    <input type="hidden" name="product_name" value="Gaming Laptop Pro">
+                    <input type="hidden" name="product_price" value="1049.99">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <!-- Add more sale items following the same structure -->
+    </section>
+
+    <script type="module" src="../js/script.js"></script>
+  </body>
+</html>

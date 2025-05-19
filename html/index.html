@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home</title>
+    <link rel="icon" type="image/png" href="../images/nexcartlogo.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../html/index.html" class="logo-link">
+                <img src="../images/nexcartlogo.png" alt="Logo" class="brand-logo">
+            </a>
+            <div class="nav-items">
+                <div class="nav-links">
+                    <a href="../html/new-arrivals.html" class="nav-link">New Arrivals</a>
+                    <a href="../html/categories.html" class="nav-link">Categories</a>
+                    <a href="../html/sale.html" class="nav-link">Sale</a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button class="search-btn"><img src="../images/search-icon.jpg" alt="Search" class="search-icon"></button>
+                </div>
+                <a href="../html/checkout.html" class="cart-icon"><img src="../images/shopping-cart.png" alt="Cart" class="cart-icon-img"><span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../images/hero-bg.jpg')">
+        <div class="hero-content">
+            <h1>New Season Collection</h1>
+            <p>Up to 50% Off Selected Items</p>
+            <a href="sale.html" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products-container" id="productsContainer">
+            <div class="product-card">
+                <img src="../images/headphones.jpg" alt="Premium Wireless Headphones" class="product-image">
+                <div class="product-info">
+                    <h3>Premium Wireless Headphones</h3>
+                    <p>$199.99</p>
+                    <form action="../html/checkout.html" method="get">
+                        <input type="hidden" name="product_id" value="1">
+                        <input type="hidden" name="product_name" value="Premium Wireless Headphones">
+                        <input type="hidden" name="product_price" value="199.99">
+                        <button type="submit" class="add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/smartwatch.jpg" alt="Smart Fitness Watch" class="product-image">
+                <div class="product-info">
+                    <h3>Smart Fitness Watch</h3>
+                    <p>$149.99</p>
+                    <form action="html/checkout.html" method="get">
+                        <input type="hidden" name="product_id" value="2">
+                        <input type="hidden" name="product_name" value="Smart Fitness Watch">
+                        <input type="hidden" name="product_price" value="149.99">
+                        <button type="submit" class="add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/laptop.jpg" alt="Ultra-Slim Laptop" class="product-image">
+                <div class="product-info">
+                    <h3>Ultra-Slim Laptop</h3>
+                    <p>$999.99</p>
+                    <form action="html/checkout.html" method="get">
+                        <input type="hidden" name="product_id" value="3">
+                        <input type="hidden" name="product_name" value="Ultra-Slim Laptop">
+                        <input type="hidden" name="product_price" value="999.99">
+                        <button type="submit" class="add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/camera.jpg" alt="4K Digital Camera" class="product-image">
+                <div class="product-info">
+                    <h3>4K Digital Camera</h3>
+                    <p>$699.99</p>
+                    <form action="html/checkout.html" method="get">
+                        <input type="hidden" name="product_id" value="4">
+                        <input type="hidden" name="product_name" value="4K Digital Camera">
+                        <input type="hidden" name="product_price" value="699.99">
+                        <button type="submit" class="add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
